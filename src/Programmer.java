@@ -1,7 +1,23 @@
 public class Programmer extends Person {
     private String companyName ;
-    public  Programmer ( String companyName,String learn, String walk ,String eat ) {
-        super(learn,walk,eat );
+
+    @Override
+    public String learn() {
+        return super.learn();
+    }
+
+    @Override
+    public String walk() {
+        return super.walk();
+    }
+
+    @Override
+    public String eat() {
+        return super.eat();
+    }
+
+    public  Programmer (String companyName, String learn, String walk, String eat) {
+        super(learn,walk,eat);
         this.companyName = companyName;
     }
 
@@ -19,10 +35,10 @@ public class Programmer extends Person {
 
     @Override
     public String toString() {
-        return "Programmer : " +
-                "companyName = " + companyName +"\n " +"Person : \n" +
-                "learn = " + learn + '\n' +
-                "walk = " + walk + '\n' +
-                "eat = " + eat + '\n' + coding();
+        return "Programmer : '\n'" +
+                "companyName =" + companyName + '\n' +
+                "learn = " + learn() + '\n' +
+                "walk = " + walk() + '\n' +
+                "eat = " + eat() + '\n' ;
     }
 }

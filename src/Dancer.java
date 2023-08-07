@@ -2,7 +2,7 @@ public class Dancer extends Person {
 
     private String groupName;
     public String dancing (){
-        return "band members:\n" +
+        return "band members: \n " +
                 "Kevin KB Brewer\n" +
                 "Joe  Punkee Larot\n" +
                 "Phil  Swagger Boy Tayag\n" +
@@ -29,10 +29,11 @@ public class Dancer extends Person {
 
     @Override
     public String toString() {
-        return "Dancer : " +
-                "groupName='" + groupName +"\n " +"Person :\n " +
-                "learn = " + learn + '\n' +
-                "walk = " + walk + '\n' +
-                "eat = " + eat + '\n' +  dancing();
+        return "Dancer : '\n'" +
+                "groupName='" + groupName +"\n "+
+                "learn = " +learn() + '\n' +
+                "walk = " +walk() + '\n' +
+                "eat = " +eat() + '\n'
+                +dancing()+ '\n';
     }
 }

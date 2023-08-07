@@ -1,7 +1,7 @@
 public class Person {
-    protected String learn;
-    protected String walk ;
-    protected String eat ;
+    String learn ;
+    String walk;
+    String eat;
 
     public Person(String learn, String walk, String eat) {
         this.learn = learn;
@@ -9,36 +9,17 @@ public class Person {
         this.eat = eat;
     }
 
-    public String getLearn() {
+    public String learn(){
         return learn;
     }
-
-    public void setLearn(String learn) {
-        this.learn = learn;
+    public String walk (){
+        return  walk;
     }
-
-    public String getWalk() {
-        return walk;
-    }
-
-    public void setWalk(String walk) {
-        this.walk = walk;
-    }
-
-    public String getEat() {
+    public String eat (){
         return eat;
     }
-
-    public void setEat(String eat) {
-        this.eat = eat;
+    public Person() {
     }
 
-    @Override
-    public String toString() {
-        return "Person{" +
-                "learn='" + learn + '\'' +
-                ", walk='" + walk + '\'' +
-                ", eat='" + eat + '\'' +
-                '}';
-    }
+
 }
